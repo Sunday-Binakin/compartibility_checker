@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Compatibility Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💖 Love Compatibility Checker 💖</h1>
+    <p>Enter your name and the name of your partner/lover/crush to find out your love compatibility!</p>
+
+    <form id="love-form">
+      <div class="form-group">
+        <label for="yourName">Your Name</label>
+        <input type="text" id="yourName" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="partnerName">Partner's Name</label>
+        <input type="text" id="partnerName" placeholder="Enter your partner's name" required>
+      </div>
+      <button type="submit" class="submit-btn">Check Compatibility</button>
+    </form>
+
+    <div id="result">
+      <h2>Compatibility Result:</h2>
+      <p id="compatibility-output"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
