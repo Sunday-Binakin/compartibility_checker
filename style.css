@@ -180,7 +180,8 @@ input:focus {
 #compatibility-output {
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: rgb(238, 44, 141);
+  background-color: #ff5a5f;
+  /* background-color: rgb(238, 44, 141); */
 }
 
 /* Additional styling for high compatibility */
