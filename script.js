@@ -1,8 +1,8 @@
 document.getElementById('love-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const yourName = document.getElementById('yourName').value;
-    const partnerName = document.getElementById('partnerName').value;
+    const yourName = document.getElementById('male').value;
+    const partnerName = document.getElementById('female').value;
   
     // API call to fetch love compatibility
     const options = {
@@ -11,12 +11,12 @@ document.getElementById('love-form').addEventListener('submit', function(e) {
         'X-RapidAPI-Key': '331a995671msheb7e7f0e47253bap17f64djsna9a258c37004',  
         'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
       }
-    };
+    };  
   
     fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${yourName}&fname=${partnerName}`, options)
       .then(response => response.json())
       .then(data => {
-        const resultOutput = `${yourName} and ${partnerName} have a ${data.percentage}% love compatibility! ${data.result}`;
+        const resultOutput = ` ${male} and ${female} have a ${data.percentage}% love compatibility! ${data.result}`;
         document.getElementById('compatibility-output').textContent = resultOutput;
         document.getElementById('result').style.display = 'block';
       })
