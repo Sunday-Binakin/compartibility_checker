@@ -180,6 +180,8 @@ input:focus {
 #compatibility-output {
   font-size: 1.5rem;
   font-weight: bold;
+  height: auto;
+  border-radius: 10px;
   background-color: #ff5a5f;
   /* background-color: rgb(238, 44, 141); */
 }
@@ -189,6 +191,7 @@ input:focus {
   color: #9e0c3c;
   font-size: 1.3rem;
   margin-top: 10px;
+  border-radius: 20px;
 }
 #result h2{
   margin-bottom: 20px;
